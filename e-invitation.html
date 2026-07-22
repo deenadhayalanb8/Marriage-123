@@ -6,7 +6,7 @@
   <meta name="format-detection" content="telephone=no"/>
   <meta property="og:title" content="Wedding Invitation - Deenadhayalan & Preethi"/>
   <meta property="og:description" content="You are cordially invited to the wedding celebration of Deenadhayalan & Preethi on August 29-30, 2025"/>
-  <meta property="og:image" content="https://raw.githubusercontent.com/deenadhayalanb8/Marriage-123/main/wedding_invitation.html"/>
+  <meta property="og:image" content="https://raw.githubusercontent.com/deenadhayalanb8/Marriage-123/main/e-invitation.html"/>
   <title>💍 Wedding Invitation – Deenadhayalan & Preethi</title>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
@@ -213,84 +213,12 @@
       color:#7a5c00; font-style:italic; padding:10px 16px 0;
     }
 
-    /* Share Section */
-    .share-section {
-      position: relative; z-index: 1;
-      background: linear-gradient(160deg, #fffdf5 0%, #fff8e1 40%, #fdf3d0 100%);
-      border: 2px solid #b8860b;
-      border-top: none;
-      border-radius: 0 0 4px 4px;
-      width: min(680px, 94vw);
-      margin: 0 auto 20px;
-      padding: 20px;
-      text-align: center;
-      box-shadow:
-        0 0 0 5px #fdf3d0,
-        0 0 0 8px #b8860b,
-        0 0 30px 4px rgba(184,134,11,.45);
-    }
-
-    .share-title {
-      font-family: 'Cinzel', serif;
-      color: #8b1a1a;
-      font-size: 0.95rem;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-      font-weight: 600;
-    }
-
-    .share-buttons {
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .share-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 16px;
-      background: linear-gradient(135deg, #8b1a1a 0%, #c8960c 100%);
-      color: #fff8e1;
-      border: 2px solid #8b1a1a;
-      border-radius: 4px;
-      cursor: pointer;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      letter-spacing: 0.05em;
-    }
-
-    .share-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(139, 26, 26, 0.3);
-      background: linear-gradient(135deg, #c8960c 0%, #8b1a1a 100%);
-    }
-
-    .share-btn:active {
-      transform: translateY(0);
-    }
-
-    .share-text {
-      color: #7a5c00;
-      font-size: 0.85rem;
-      margin-top: 12px;
-      font-style: italic;
-    }
-
     /* ── Mobile overrides ── */
     @media (max-width: 420px) {
       .inner { padding: 36px 16px 28px; }
       .corner { width:40px; height:40px; }
       .event-box { flex:1 1 100%; max-width:100%; }
       .events { gap:10px; }
-      .share-section { width: calc(94vw + 6px); margin-left: auto; margin-right: auto; padding: 16px; }
-      .share-buttons { gap: 8px; }
-      .share-btn { padding: 8px 12px; font-size: 0.8rem; }
     }
   </style>
 </head>
@@ -386,19 +314,6 @@
 
 </div>
 
-<!-- Share Section -->
-<div class="share-section">
-  <div class="share-title">📤 Share This Invitation</div>
-  <div class="share-buttons">
-    <button class="share-btn" onclick="shareWhatsApp()">💬 WhatsApp</button>
-    <button class="share-btn" onclick="shareFacebook()">📱 Facebook</button>
-    <button class="share-btn" onclick="shareTwitter()">𝕏 Tweet</button>
-    <button class="share-btn" onclick="shareEmail()">✉️ Email</button>
-    <button class="share-btn" onclick="copyLink()">🔗 Copy Link</button>
-  </div>
-  <p class="share-text">💕 Spread the joy! Share this invitation with your loved ones.</p>
-</div>
-
 <script>
   // Initialize petals animation
   var c = document.getElementById('petals');
@@ -411,38 +326,6 @@
     var duration = Math.random()*8+7;
     p.style.cssText = 'left:'+Math.random()*100+'%;width:'+sz+'px;height:'+(sz*.6)+'px;background:'+cols[Math.floor(Math.random()*cols.length)]+';animation-duration:'+duration+'s;animation-delay:'+(Math.random()*3)+'s;';
     c.appendChild(p);
-  }
-
-  // Get the invitation link
-  var invitationLink = window.location.href;
-
-  // Share functions
-  function shareWhatsApp() {
-    var text = "🌟 You are cordially invited to the wedding celebration of Deenadhayalan & Preethi! 💍\n\nJoin us on August 29-30, 2025 in Erode, Tamil Nadu.\n\nView the beautiful invitation:\n" + invitationLink;
-    window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank');
-  }
-
-  function shareFacebook() {
-    window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(invitationLink), '_blank');
-  }
-
-  function shareTwitter() {
-    var text = "💍 You're invited! Join the wedding celebration of Deenadhayalan & Preethi on August 29-30, 2025! 🎉\n\n";
-    window.open('https://twitter.com/intent/tweet?url=' + encodeURIComponent(invitationLink) + '&text=' + encodeURIComponent(text), '_blank');
-  }
-
-  function shareEmail() {
-    var subject = "💍 Wedding Invitation - Deenadhayalan & Preethi";
-    var body = "You are cordially invited to the wedding celebration of Deenadhayalan & Preethi!\n\nView the invitation:\n" + invitationLink + "\n\nWe would be delighted to have you join us!";
-    window.open('mailto:?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body), '_blank');
-  }
-
-  function copyLink() {
-    navigator.clipboard.writeText(invitationLink).then(function() {
-      alert('✓ Invitation link copied to clipboard!');
-    }).catch(function(err) {
-      alert('Failed to copy link. Please try again.');
-    });
   }
 </script>
 </body>
